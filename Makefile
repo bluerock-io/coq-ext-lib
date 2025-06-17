@@ -8,7 +8,7 @@ theories: $(COQMAKEFILE)
 	$(MAKE) -f $(COQMAKEFILE)
 
 $(COQMAKEFILE):
-	$(COQBIN)coq_makefile -f _CoqProject -o $(COQMAKEFILE)
+	$(COQBIN)coq_makefile -f _CoqProject.coq_makefile -o $(COQMAKEFILE)
 
 install: $(COQMAKEFILE)
 	$(MAKE) -f $(COQMAKEFILE) install
